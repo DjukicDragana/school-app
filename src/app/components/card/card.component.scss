@@ -1,0 +1,28 @@
+@import '../../styles/colors.scss';
+@import '../../styles/sizes.scss';
+
+
+.card {
+    width: 430px;
+    border: none;
+    margin-top: 80px;
+    background-color: $card-color;
+    .header {
+    color: $green-color;
+}
+.card-body{
+    background-image: url("../../../assets/card.png");
+    width: 430px;
+    height: 680px;
+    .additional-info{
+        font-size: $size-14;
+        color: $gray-dashboard-color;
+    }
+}
+.menu-options {
+    margin-top: 520px;
+    img {
+        cursor: pointer;
+    }
+}
+}

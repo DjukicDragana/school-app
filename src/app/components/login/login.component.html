@@ -1,33 +1,49 @@
 <div class="text-center">
-  <img class="bg-dark" src="../../../assets/sign-in.png" alt="" />
+  <img class="bg-dark" src="../../../assets/sign-in.png" alt="Cover image" />
 </div>
-<div class="login-container">
-  <h2 class="poppins-semibold">Get Started</h2>
-  <p class="poppins-medium">welcome back we missed you</p>
-  <form (ngSubmit)="login()">
+<div
+  class="login-container text-center p-4 rounded rounded-4 position-relative"
+>
+  <div class="text-container">
+    <h2 class="poppins-semibold text-center fs-1 mb-2">Get Started</h2>
+    <p class="poppins-medium">welcome back we missed you</p>
+  </div>
+
+  <form (ngSubmit)="login()" class="form position-relative z-1">
     <div class="form-group">
-      <label class="poppins-medium" for="username">Username</label>
-      <input type="text" id="username" name="username" [(ngModel)]="username" />
+      <label class="poppins-medium d-block mb-2 text-start" for="username"
+        >Username</label
+      >
+      <input
+        class="fs-6 border border-0"
+        type="text"
+        id="username"
+        name="username"
+        [(ngModel)]="username"
+      />
       <div *ngIf="invalidData"></div>
     </div>
     <div class="form-group">
-      <label class="poppins-medium" for="password">Password</label>
+      <label class="poppins-medium d-block mb-2 text-start" for="password"
+        >Password</label
+      >
       <input
+        class="fs-6 border border-0"
         type="password"
         id="password"
         name="password"
         [(ngModel)]="password"
       />
-      <p class="poppins-medium forgot-password">Forgot Password?</p>
+      <p class="poppins-medium text-end mb-0">Forgot Password?</p>
     </div>
     <button class="poppins-medium mt-3" type="submit">Sign In</button>
     <div class="icons-container">
       <div class="continue-text">
-        <img src="../../../assets/left-line.png" alt="" />
+        <img src="../../../assets/left-line.png"/>
         <p class="poppins-medium d-inline">Or continue with</p>
-        <img src="../../../assets/right-line.png" alt="" />
+        <img src="../../../assets/right-line.png"/>
       </div>
-      <img src="../../../assets/icons.png" alt="" />
+      <img src="../../../assets/icons.png" alt="Sign in icons" />
     </div>
   </form>
 </div>

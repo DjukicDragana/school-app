@@ -1,1 +1,7 @@
-<p>dashboard works!</p>
+<div class="container position-relative d-flex justify-content-center">
+  <div class="flex-container d-flex align-items-center flex-column">
+    <app-navigation></app-navigation>
+    <app-card [headerText]="header" [additionalInfo]="additionalInfo" [additionalInformation]="additionalInformation" [ngStyle]="{'background-color': '#151316'}"></app-card>
+  </div>
+  <img src="../../../assets/dashboard-objects.png" class="position-absolute top-2 start-2 dashboard-objects">
+</div>

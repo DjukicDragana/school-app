@@ -1,81 +1,79 @@
 @import "../../styles/colors.scss";
+@import "../../styles/sizes.scss";
+
 
 .login-container {
   width: 430px;
   margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
   background-image: url("../../../assets/card-background.png");
-  text-align: center;
   height: 720px;
-  position: relative;
   margin-top: -250px;
-  border-radius: 59px 0 0 0px;
 
-  h2 {
-    margin-bottom: 10px;
-    margin-top: 125px;
-    text-align: center;
-    color: $white-color;
-    font-size: 40px;
-  }
+  .text-container {
+    background-image: url("../../../assets/objects-background.png");
+    width: 400px;
+    height: 315px;
 
-  p {
-    color: $gray-color;
-    font-size: 14px;
-  }
-
-  .form-group {
-    margin-bottom: 15px;
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-      font-size: 14px;
-      color: $gray-color;
-      text-align: left;
-      padding-left: 35px;
-    }
-
-    input {
-      width: 80%;
-      padding: 8px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background-image: url("../../../assets/input.png");
+    h2 {
+      padding-top: 125px;
+      color: $white-color;
     }
 
     p {
-      font-size: 11px;
-      text-align: right;
       color: $gray-color;
-      margin-bottom: 0px;
-      margin-top: 10px;
-      padding-right: 38px;
+      font-size: $size-14;
+    }
+  }
+
+  .form {
+    bottom: 80px;
+    .form-group {
+      margin-bottom: $size-15;
+
+      label {
+        font-size: $size-14;
+        color: $gray-color;
+        padding-left: 35px;
+      }
+
+    input {
+      width: 80%;
+      padding: $size-8;
+      font-size: $size-16;
+      border-radius: $size-8;
+      background-image: url("../../../assets/input.png");
+    }
+
+      p {
+        font-size: $size-11;
+        color: $gray-color;
+        margin-top: $size-10;
+        padding-right: 38px;
+      }
     }
   }
 
   button {
     width: 80%;
-    padding: 10px;
-    font-size: 18px;
+    padding: $size-10;
+    font-size: $size-18;
     background: linear-gradient($green-color, $orange-color);
     color: #fff;
     border: none;
-    border-radius: 15px;
+    border-radius: $size-15;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
 
   .icons-container {
-    padding-top: 15px;
+    padding-top: $size-15;
     .continue-text {
       text-align: center;
-      padding-bottom: 15px;
+      padding-bottom: $size-15;
       p {
         padding: 0 5px 0 5px;
-        font-size: 11px;
+        font-size: $size-11;
+        color: $gray-second-color;
       }
     }
     img {
@@ -92,6 +90,6 @@
   width: calc(100% + 10px);
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
+  border-radius: $size-20;
   z-index: -1;
 }

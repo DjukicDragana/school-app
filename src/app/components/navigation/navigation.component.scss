@@ -1,0 +1,13 @@
+@import "../../styles/colors.scss";
+
+.navbar {
+  width: 430px;
+  display: contents;
+  .container-fluid {
+    background-color: $card-color;
+    width: 430px;
+    .dropdown-menu a.dropdown-item:focus {
+      background-color: $gray-second-color;
+    }
+  }
+}
