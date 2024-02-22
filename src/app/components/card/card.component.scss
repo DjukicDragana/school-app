@@ -11,7 +11,7 @@
     color: $green-color;
 }
 .card-body{
-    background-image: url("../../../assets/card.png");
+    background-image: url("/assets/card.png");
     width: 430px;
     height: 680px;
     .additional-info{
@@ -20,7 +20,7 @@
     }
 }
 .menu-options {
-    margin-top: 520px;
+    margin-top: 180px;
     img {
         cursor: pointer;
     }

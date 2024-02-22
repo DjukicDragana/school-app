@@ -10,8 +10,6 @@ export class CardComponent {
   @Input() headerText: string = '';
   @Input() additionalInfo: string = '';
   @Input() additionalInformation: string = '';
-
-  public rows = [1, 2, 3, 4, 5, 6];
-  public columns = [1, 2, 3, 4, 5];
+  @Input() shouldDisplayTable: boolean = false;
 
 }

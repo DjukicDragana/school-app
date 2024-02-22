@@ -1,5 +1,5 @@
 <div class="text-center">
-  <img class="bg-dark" src="../../../assets/sign-in.png" alt="Cover image" />
+  <img class="bg-dark" src="/assets/sign-in.png" alt="Cover image" />
 </div>
 <div
   class="login-container text-center p-4 rounded rounded-4 position-relative"
@@ -21,7 +21,7 @@
         name="username"
         [(ngModel)]="username"
       />
-      <div *ngIf="invalidData"></div>
+      <div class="text-start text-danger poppins-medium invalid-input mt-2" *ngIf="invalidData">Please, provide valid username</div>
     </div>
     <div class="form-group">
       <label class="poppins-medium d-block mb-2 text-start" for="password"
@@ -34,16 +34,17 @@
         name="password"
         [(ngModel)]="password"
       />
+      <div class="text-start text-danger poppins-medium invalid-input mt-2" *ngIf="invalidData">Please, provide valid password</div>
       <p class="poppins-medium text-end mb-0">Forgot Password?</p>
     </div>
     <button class="poppins-medium mt-3" type="submit">Sign In</button>
     <div class="icons-container">
       <div class="continue-text">
-        <img src="../../../assets/left-line.png"/>
+        <img src="/assets/left-line.png"/>
         <p class="poppins-medium d-inline">Or continue with</p>
-        <img src="../../../assets/right-line.png"/>
+        <img src="/assets/right-line.png"/>
       </div>
-      <img src="../../../assets/icons.png" alt="Sign in icons" />
+      <img src="/assets/icons.png" alt="Sign in icons" />
     </div>
   </form>
 </div>

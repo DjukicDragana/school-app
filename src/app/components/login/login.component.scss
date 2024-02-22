@@ -1,16 +1,15 @@
 @import "../../styles/colors.scss";
 @import "../../styles/sizes.scss";
 
-
 .login-container {
   width: 430px;
   margin: 0 auto;
-  background-image: url("../../../assets/card-background.png");
+  background-image: url("/assets/card-background.png");
   height: 720px;
   margin-top: -250px;
 
   .text-container {
-    background-image: url("../../../assets/objects-background.png");
+    background-image: url("/assets/objects-background.png");
     width: 400px;
     height: 315px;
 
@@ -36,13 +35,18 @@
         padding-left: 35px;
       }
 
-    input {
-      width: 80%;
-      padding: $size-8;
-      font-size: $size-16;
-      border-radius: $size-8;
-      background-image: url("../../../assets/input.png");
-    }
+      input {
+        width: 80%;
+        padding: $size-8;
+        font-size: $size-16;
+        border-radius: $size-8;
+        background-image: url("/assets/input.png");
+      }
+
+      .invalid-input {
+        font-size: $size-11;
+        margin-left: 40px;
+      }
 
       p {
         font-size: $size-11;
