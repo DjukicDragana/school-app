@@ -5,14 +5,14 @@
   class="login-container text-center p-4 rounded rounded-4 position-relative"
 >
   <div class="text-container">
-    <h2 class="poppins-semibold text-center fs-1 mb-2">Get Started</h2>
-    <p class="poppins-medium">welcome back we missed you</p>
+    <h2 class="poppins-semibold text-center fs-1 mb-2">Počnimo!</h2>
+    <p class="poppins-medium">Učimo i napredujemo zajedno!</p>
   </div>
 
   <form (ngSubmit)="login()" class="form position-relative z-1">
     <div class="form-group">
       <label class="poppins-medium d-block mb-2 text-start" for="username"
-        >Username</label
+        >Korisničko ime</label
       >
       <input
         class="fs-6 border border-0"
@@ -21,11 +21,11 @@
         name="username"
         [(ngModel)]="username"
       />
-      <div class="text-start text-danger poppins-medium invalid-input mt-2" *ngIf="invalidData">Please, provide valid username</div>
+      <div class="text-start text-danger poppins-medium invalid-input mt-2" *ngIf="invalidData">Korisničko ime je neispravno</div>
     </div>
     <div class="form-group">
       <label class="poppins-medium d-block mb-2 text-start" for="password"
-        >Password</label
+        >Lozinka</label
       >
       <input
         class="fs-6 border border-0"
@@ -34,14 +34,14 @@
         name="password"
         [(ngModel)]="password"
       />
-      <div class="text-start text-danger poppins-medium invalid-input mt-2" *ngIf="invalidData">Please, provide valid password</div>
-      <p class="poppins-medium text-end mb-0">Forgot Password?</p>
+      <div class="text-start text-danger poppins-medium invalid-input mt-2" *ngIf="invalidData">Lozinka je neispravna</div>
+      <p class="poppins-medium text-end mb-0">Zaboravljena šifra?</p>
     </div>
-    <button class="poppins-medium mt-3" type="submit">Sign In</button>
+    <button class="poppins-medium mt-3" type="submit">Loguj se</button>
     <div class="icons-container">
       <div class="continue-text">
         <img src="/assets/left-line.png"/>
-        <p class="poppins-medium d-inline">Or continue with</p>
+        <p class="poppins-medium d-inline">Nastavi sa</p>
         <img src="/assets/right-line.png"/>
       </div>
       <img src="/assets/icons.png" alt="Sign in icons" />
