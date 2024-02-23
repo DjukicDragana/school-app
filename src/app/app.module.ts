@@ -9,6 +9,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { CardComponent } from './components/card/card.component';
 import { TableComponent } from './components/table/table.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { TableComponent } from './components/table/table.component';
     NavigationComponent,
     CardComponent,
     TableComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
